@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "watermalon",
+  "version": "${version}",
+  "name": "Watermalon",
+  "description": "A clean client GUI, draggable HUD, and quality-of-life modules.",
+  "authors": ["Watermalon"],
+  "license": "MIT",
+  "icon": "assets/watermalon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.watermalon.Watermalon"]
+  },
+  "mixins": ["watermalon.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
