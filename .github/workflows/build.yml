@@ -20,13 +20,13 @@ jobs:
         java-version: '21'
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      run: chmod +x watermalon-mod/gradlew
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./watermalon-mod/gradlew build
 
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: watermalon-mod-jar
-        path: build/libs/*.jar
+        path: watermalon-mod/build/libs/*.jar
